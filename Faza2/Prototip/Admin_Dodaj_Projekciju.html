@@ -143,8 +143,8 @@
               </datalist>
             </div>
             <div class="mb-3">
-              <label for="cinema" class="form-label">Sala i format:</label>
-              <div class="input-group">
+              <label for="room-format" class="form-label">Sala i format:</label>
+              <div class="input-group" id="room-format">
                 <select class="form-select" id="room" required>
                   <option value="">Sala:</option>
                   <option value="1">1</option>
@@ -165,13 +165,23 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="time" class="form-label">Datum i vreme:</label>
-              <div class="input-group">
+              <label for="date-time" class="form-label">Datum i vreme:</label>
+              <div class="input-group" id="date-time">
                 <input type="date" class="form-control" id="date" required />
                 <input type="time" class="form-control" id="time" required />
               </div>
             </div>
-            <div></div>
+            <div class="mb-3">
+              <label for="duration" class="form-label">Trajanje:</label>
+              <select class="form-select" id="duration" required>
+                <option value="" disabled selected></option>
+                <option value="1">2h</option>
+                <option value="2">2h 30min</option>
+                <option value="3">3h</option>
+                <option value="4">3h 30min</option>
+                <option value="4">4h</option>
+              </select>
+            </div>
             <button
               type="submit"
               class="btn btn-dark btn-block btn-register mt-auto"
