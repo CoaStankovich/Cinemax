@@ -10,6 +10,7 @@
     />
     <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta charset="UTF-8" />
   </head>
 
@@ -106,6 +107,105 @@
         </div>
       </div>
     </nav>
+
+
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form id="sign-in-form" class="d-grid">
+            <div class="mb-3">
+              <label for="movies" class="form-label">Naziv filma:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="filmovi"
+                id="movies"
+                autocomplete="off"
+                required
+              />
+              <datalist id="filmovi">
+                <option value="Antmen i osa - Kvantumanija"></option>
+                <option value="Avatar - Put vode"></option>
+                <option value="Šazam! Gnev bogova"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="genre" class="form-label">Žanrovi:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  list="genres"
+                  id="genre"
+                  required
+                  autocomplete="off"
+                />
+                <datalist id="genres">
+                  <option value="Drama"></option>
+                  <option value="Komedija"></option>
+                  <option value="Horor"></option>
+                  <option value="Dokumentarac"></option>
+                </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="reziser" class="form-label">Režiser:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  list="reziseri"
+                  id="reziser"
+                  required
+                  autocomplete="off"
+                />
+            </div>
+            <div class="mb-3">
+              <label for="actor" class="form-label">Glavna uloga:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  list="actors"
+                  id="actor"
+                  required
+                  autocomplete="off"
+                />
+            </div>
+            <div class="drag-area">
+              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+              <header>Prevucite sliku u JPEG formatu</header>
+              <span>ili</span>
+              <button>Dodajte sliku iz pretraživača</button>
+              <input type="file" hidden>
+            </div>
+            <div class="mb-3">
+              <label for="year" class="form-label">Država/Godina:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  list="countries"
+                  id="year"
+                  required
+                  autocomplete="off"
+                />
+            </div>
+            <div class="mb-3">
+              <label for="desc" class="form-label">Opis:</label>
+              <textarea name="" id="desc" cols="70" rows="5"></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark btn-block btn-register mt-auto"
+              id="add"
+            >
+              DODAJ FILM
+            </button>
+            <label for="add"></label>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <footer class="p-0 m-0">
       <div
