@@ -105,6 +105,115 @@
       </div>
     </nav>
 
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form class="d-grid" id="sign-in-form">
+            <div class="mb-3">
+              <label for="movies" class="form-label">Film:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="filmovi"
+                id="movies"
+                autocomplete="off"
+                required
+              />
+              <datalist id="filmovi">
+                <option value="Antmen i osa - Kvantumanija"></option>
+                <option value="Avatar - Put vode"></option>
+                <option value="Šazam! Gnev bogova"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="cinema" class="form-label">Bioskop:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="cinemas"
+                id="cinema"
+                required
+                autocomplete="off"
+              />
+              <datalist id="cinemas">
+                <option value="Cinemax BEO Shopping Center"></option>
+                <option value="Cinemax Delta City"></option>
+                <option value="Cinemax Rajićeva"></option>
+                <option value="Cinemax Ušće Shopping Center"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="room-format" class="form-label">Sala i format:</label>
+              <div class="input-group" id="room-format">
+                <select class="form-select" id="room" required>
+                  <option value="">Sala:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <select class="form-select" id="format" required>
+                  <option value="">Format:</option>
+                  <option value="Digital 2D">Digital 2D</option>
+                  <option value="Digital 3D">Digital 3D</option>
+                  <option value="IMAX 2D">IMAX 2D</option>
+                  <option value="IMAX 3D">IMAX 3D</option>
+                  <option value="MX4D 2D">MX4D 2D</option>
+                  <option value="MX4D 3D">MX4D 3D</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="date-time" class="form-label">Datum i vreme:</label>
+              <div class="input-group" id="date-time">
+                <input type="date" class="form-control" id="date" required />
+                <input type="time" class="form-control" id="time" required />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="duration" class="form-label">Trajanje:</label>
+              <select class="form-select" id="duration" required>
+                <option value="" disabled selected></option>
+                <option value="1">2h</option>
+                <option value="2">2h 30min</option>
+                <option value="3">3h</option>
+                <option value="4">3h 30min</option>
+                <option value="4">4h</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Cena karte:</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  placeholder="Dinari:"
+                  required
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="points"
+                  placeholder="Bodovi:"
+                  required
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark btn-block btn-register mt-auto"
+              id="add"
+            >
+              DODAJ PROJEKCIJU
+            </button>
+            <label for="add"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -113,8 +222,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>

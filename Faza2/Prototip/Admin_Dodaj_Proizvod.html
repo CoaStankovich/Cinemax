@@ -105,6 +105,93 @@
       </div>
     </nav>
 
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form class="d-grid" id="sign-in-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Ime:</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="movies" class="form-label">Film:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="filmovi"
+                id="movies"
+                autocomplete="off"
+                required
+              />
+              <datalist id="filmovi">
+                <option value="Antmen i osa - Kvantumanija"></option>
+                <option value="Avatar - Put vode"></option>
+                <option value="Šazam! Gnev bogova"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="type" class="form-label">Tip:</label>
+              <select class="form-select" id="type" required>
+                <option value="" disabled selected></option>
+                <option value="Kostim">Kostim</option>
+                <option value="Igračka">Igračka</option>
+                <option value="Odeća">Odeća</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Opis:</label>
+              <textarea
+                class="form-control"
+                id="description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="gallery" class="form-label">Slike:</label>
+              <input
+                type="file"
+                class="form-control"
+                id="gallery"
+                multiple
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Cena:</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  placeholder="Dinari:"
+                  required
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="points"
+                  placeholder="Bodovi:"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="count" class="form-label">Količina:</label>
+              <input type="number" class="form-control" id="count" required />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark btn-block btn-register mt-auto"
+              id="add"
+            >
+              DODAJ PROIZVOD
+            </button>
+            <label for="add"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -113,8 +200,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>

@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Proizvod</title>
+    <title>Rezervacija</title>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
     <link rel="stylesheet" href="Stilovi.css" />
     <link
       href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
     <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <meta charset="UTF-8" />
@@ -46,7 +61,7 @@
               <a class="nav-link" href="Admin_Projekcije.html">PROJEKCIJE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Prodavnica.html"> PRODAVNICA </a>
+              <a class="nav-link" href="Admin_Prodavnica.html">PRODAVNICA</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Admin_Moje_Karte.html">MOJE KARTE</a>
@@ -105,42 +120,42 @@
       </div>
     </nav>
 
-    <div class="container text-center content">
-      <h1>ANT MAN KOSTIM</h1>
-      <img src="Slike/AntmanKostim.jpg" alt="AntmanKostim.png" />
-      <p>Vaš omiljeni kostim iz antman filma</p>
-      <a class="text-danger" href="Admin_Film.html"
-        >FILM: Ant man i osa: Kvantumanija</a
-      >
-      <h1>CENA: 7500 RSD 150000 bodova</h1>
-
-      <form action="">
-        <input type="text" placeholder="Opština:" />
-        <input type="text" placeholder="Ulica:" />
-        <input type="tel" placeholder="Telefon:" />
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1"> RSD </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            Bodovi
-          </label>
-        </div>
-        <button>NARUČI</button>
-      </form>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <td colspan="6">PLATNO</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+            <td><img src="Slike/Sedište.png" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-dark">REZERVIŠI</button>
+      <button class="btn btn-dark">AŽURIRAJ</button>
     </div>
 
     <footer class="p-0 m-0">
