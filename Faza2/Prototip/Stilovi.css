@@ -16,12 +16,14 @@
   color: white !important;
 }
 
-.btn-register {
+.btn-register,
+.btn-cancel {
   background-color: #343a40;
   border-color: #343a40;
 }
 
-.btn-register:hover {
+.btn-register:hover,
+.btn-cancel:hover {
   background-color: #dc3545 !important;
   border-color: #dc3545 !important;
 }
@@ -38,6 +40,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .my-tickets,
+  .my-orders {
+    max-width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
 }
 
