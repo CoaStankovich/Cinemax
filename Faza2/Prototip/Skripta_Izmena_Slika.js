@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
-      input.removeAttribute("disabled");
+      input.classList.add("active");
     } else {
-      input.setAttribute("disabled", "");
+      input.classList.remove("active");
     }
   });
 });

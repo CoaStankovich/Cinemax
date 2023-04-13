@@ -16,9 +16,13 @@
   </head>
 
   <body>
+    <!--Header-->
+
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -63,6 +67,8 @@
       </div>
     </nav>
 
+    <!--Administracioni bar-->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-danger p-0">
       <div class="container-fluid">
         <button
@@ -104,10 +110,12 @@
       </div>
     </nav>
 
+    <!--Sadržaj-->
+
     <div class="container mt-5 content">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
-          <form class="d-grid" id="sign-in-form">
+          <form class="d-grid" id="add-projection-form">
             <div class="mb-3">
               <label for="movies" class="form-label">Film:</label>
               <input
@@ -173,7 +181,12 @@
             <div class="mb-3">
               <label for="duration" class="form-label">Trajanje:</label>
               <select class="form-select" id="duration" required>
-                <option value="" disabled selected></option>
+                <option
+                  value=""
+                  disabled
+                  selected
+                  style="display: none"
+                ></option>
                 <option value="1">2h</option>
                 <option value="2">2h 30min</option>
                 <option value="3">3h</option>
@@ -202,7 +215,7 @@
             </div>
             <button
               type="submit"
-              class="btn btn-dark btn-block btn-register mt-auto"
+              class="btn btn-dark button-style mt-auto"
               id="add"
             >
               DODAJ PROJEKCIJU
@@ -212,6 +225,8 @@
         </div>
       </div>
     </div>
+
+    <!--Footer-->
 
     <footer class="p-0 m-0">
       <div
