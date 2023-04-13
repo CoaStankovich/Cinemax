@@ -61,6 +61,25 @@
   border-color: #dc3545 !important;
 }
 
+.button-admin-style:hover {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
+#carouselProduct img {
+  max-width: 500px;
+}
+
+.special-hr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .special-hr {
+    display: block;
+  }
+}
+
 /*Footer*/
 
 footer {

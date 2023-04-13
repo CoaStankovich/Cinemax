@@ -16,9 +16,13 @@
   </head>
 
   <body>
+    <!--Header-->
+
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -63,6 +67,8 @@
       </div>
     </nav>
 
+    <!--Administracioni bar-->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-danger p-0">
       <div class="container-fluid">
         <button
@@ -104,43 +110,112 @@
       </div>
     </nav>
 
-    <div class="container text-center content">
-      <h1>ANT MAN KOSTIM</h1>
-      <img src="Slike/AntmanKostim.jpg" alt="AntmanKostim.png" />
-      <p>Vaš omiljeni kostim iz antman filma</p>
-      <a class="text-danger" href="Admin_Film.html"
-        >FILM: Ant man i osa: Kvantumanija</a
-      >
-      <h1>CENA: 7500 RSD 150000 bodova</h1>
+    <!--Sadržaj-->
 
-      <form action="">
-        <input type="text" placeholder="Opština:" />
-        <input type="text" placeholder="Ulica:" />
-        <input type="tel" placeholder="Telefon:" />
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1"> RSD </label>
+    <div class="container mt-5 content">
+      <div class="row">
+        <div
+          id="carouselProduct"
+          class="carousel carousel-dark slide col-md-6 d-flex align-items-center"
+          data-bs-ride="carousel"
+          style="max-height: 500px"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselProduct"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProduct"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProduct"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="Slike/AntmanKaciga1.png"
+                class="d-block w-100 mx-auto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Slike/AntmanKaciga2.png"
+                class="d-block w-100 mx-auto"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Slike/AntmanKaciga3.jpg"
+                class="d-block w-100 mx-auto"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselProduct"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselProduct"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            checked
-          />
-          <label class="form-check-label" for="flexRadioDefault2">
-            Bodovi
-          </label>
+
+        <div class="col-md-6 text-center d-grid">
+          <hr class="special-hr" />
+          <a
+            class="btn btn-danger button-admin-style"
+            href="Admin_Izmeni_Proizvod.html"
+          >
+            IZMENI
+          </a>
+          <hr />
+          <h2>ANTMAN KACIGA</h2>
+          <hr />
+          <p>
+            I dalje ste zadivljeni čudesnim kvantnim svetom koji ste videli u
+            najnovijem Marvelovom herojskom filmu? Realistična plastična kaciga
+            sa opcijom izmene glasa i zvučnim efektima je onda prava stvar za
+            vas. Uz ovo detaljno rađeno delo umetnosti moći ćete da gledate svet
+            očima Antman-a. Kvantumanija vas čeka!
+          </p>
+          <hr />
+          <a class="text-danger" href="Admin_Film.html">
+            Čovek Mrav i Osa: Kvantumanija
+          </a>
+          <hr />
+          <h3>
+            7500 RSD <br />
+            50000 <img src="Slike/Popcorn.png" style="width: 50px" />
+          </h3>
+          <hr />
+          <button class="btn btn-dark button-style">KUPI</button>
         </div>
-        <button>NARUČI</button>
-      </form>
+      </div>
     </div>
+
+    <!--Footer-->
 
     <footer class="p-0 m-0">
       <div
