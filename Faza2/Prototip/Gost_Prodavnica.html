@@ -16,9 +16,13 @@
   </head>
 
   <body>
+    <!--Header-->
+
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -60,42 +64,45 @@
       </div>
     </nav>
 
-    <div class="container-fluid" style="background-color: rgb(242, 242, 242)">
-      <form class="d-flex">
-        <div class="form-group me-3">
-          <input
-            type="text"
-            class="form-control"
-            id="productName"
-            placeholder="Proizvod:"
-          />
-        </div>
-        <div class="form-group me-3">
-          <select class="form-control" multiple>
-            <option>Dekoracija</option>
-            <option>Igračke</option>
-            <option>Igrice</option>
-            <option>Kostimi</option>
-            <option>Odeća</option>
-            <option>Obuća</option>
-          </select>
-        </div>
-        <div class="form-group me-3">
-          <input
-            type="text"
-            class="form-control"
-            list="filmovi"
-            id="movies"
-            autocomplete="off"
-            placeholder="Film:"
-          />
-          <datalist id="filmovi">
-            <option value="Antmen i osa - Kvantumanija"></option>
-            <option value="Avatar - Put vode"></option>
-            <option value="Šazam! Gnev bogova"></option>
-          </datalist>
-        </div>
-      </form>
+    <!--Pretraga-->
+
+    <div
+      class="row container-fluid"
+      style="background-color: rgb(242, 242, 242)"
+    >
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          id="productName"
+          placeholder="Proizvod:"
+        />
+      </div>
+      <div class="col-md-4">
+        <select class="form-control" multiple>
+          <option>Dekoracija</option>
+          <option>Igračke</option>
+          <option>Igrice</option>
+          <option>Kostimi</option>
+          <option>Odeća</option>
+          <option>Obuća</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          list="filmovi"
+          id="movies"
+          autocomplete="off"
+          placeholder="Film:"
+        />
+        <datalist id="filmovi">
+          <option value="Antmen i osa - Kvantumanija"></option>
+          <option value="Avatar - Put vode"></option>
+          <option value="Šazam! Gnev bogova"></option>
+        </datalist>
+      </div>
     </div>
 
     <div class="container mt-5 table-responsive my-tickets content">

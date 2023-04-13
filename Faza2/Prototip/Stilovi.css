@@ -1,31 +1,9 @@
+/*Header*/
+
 .header-img {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .active {
-  background-color: #dc3545 !important;
-  color: white !important;
-}
-
-.nav2 .nav-link:hover,
-.nav2 .active {
-  background-color: #212529 !important;
-  color: white !important;
-}
-
-.btn-register,
-.btn-cancel {
-  background-color: #343a40;
-  border-color: #343a40;
-}
-
-.btn-register:hover,
-.btn-cancel:hover {
-  background-color: #dc3545 !important;
-  border-color: #dc3545 !important;
 }
 
 @media (max-width: 768px) {
@@ -34,6 +12,23 @@
     width: 30%;
     margin-bottom: 5px;
   }
+}
+
+/*Navigacioni bar*/
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .active {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.navbar-admin .nav-link:hover,
+.navbar-admin .active {
+  background-color: #212529 !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
   .navbar-nav {
     text-align: center;
   }
@@ -50,6 +45,24 @@
   }
 }
 
+/*Sadržaj*/
+
+.content {
+  margin-bottom: 140px;
+}
+
+.button-style {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.button-style:hover {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+/*Footer*/
+
 footer {
   position: fixed;
   left: 0;
@@ -62,10 +75,6 @@ footer {
 
 footer p {
   font-size: smaller !important;
-}
-
-.content {
-  margin-bottom: 140px;
 }
 
 .drag-area {
