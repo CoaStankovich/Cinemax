@@ -6,7 +6,10 @@
     <title>Film</title>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
     <link rel="stylesheet" href="Stilovi.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,9 +21,13 @@
   </head>
 
   <body>
+    <!--Header-->
+
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -65,6 +72,8 @@
       </div>
     </nav>
 
+    <!--Administracioni bar-->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-danger p-0">
       <div class="container-fluid">
         <button
@@ -106,103 +115,64 @@
       </div>
     </nav>
 
-
+    <!--Sadržaj-->
 
     <div class="container mt-5 content">
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-5">
-          <form id="sign-in-form" class="d-grid">
-            <div class="mb-3">
-              <label for="movies" class="form-label">Naziv filma:</label>
-              <i style="font-size:24px" class="fa">&#xf040;</i>
-              <input
-                type="text"
-                class="form-control"
-                id="movies"
-                autocomplete="off"
-                required
-                placeholder="Trenutno ime filma"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="genre" class="form-label">Žanrovi:</label>
-              <i style="font-size:24px" class="fa">&#xf040;</i>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="genre"
-                  required
-                  autocomplete="off"
-                  placeholder="Trenutni žanr"
-                />
-            </div>
-            <div class="mb-3">
-              <label for="reziser" class="form-label">Režiser:</label>
-              <i style="font-size:24px" class="fa">&#xf040;</i>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  list="reziseri"
-                  id="reziser"
-                  required
-                  autocomplete="off"
-                  placeholder="Trenutni režiser"
-                />
-            </div>
-            <div class="mb-3">
-              <label for="actor" class="form-label">Glavna uloga:</label>
-              <i style="font-size:24px" class="fa">&#xf040;</i>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="actor"
-                  required
-                  autocomplete="off"
-                  placeholder="Trenutna glavna uloga"
-                />
-            </div>
-            <div class="drag-area">
-              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-              <header>Prevucite sliku u JPEG formatu</header>
-              <span>ili</span>
-              <button>Dodajte sliku iz pretraživača</button>
-              <input type="file" hidden>
-            </div>
-            <div class="mb-3">
-              <label for="year" class="form-label">Država/Godina:</label>
-              <i style="font-size:24px" class="fa">&#xf040;</i>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="year"
-                  required
-                  autocomplete="off"
-                  placeholder="Trenutna država i godina"
-                />
-            </div>
-            <div class="mb-3">
-              <label for="desc" class="form-label">Opis:</label>
-              <textarea name="" id="desc" cols="70" placeholder="Trenutni opis" rows="5"></textarea>
-            </div>
-            <button
-              type="submit"
-              class="btn btn-dark btn-block btn-register mt-auto"
-              id="add"
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <img
+            src="Slike/Čovek Mrav i Osa - Kvantumanija_Poster.png"
+            alt="Čovek Mrav i Osa - Kvantumanija_Poster.png"
+            class="img-fluid mx-auto d-block"
+            style="max-height: 600px"
+          />
+        </div>
+
+        <div class="col-md-6 col-lg-8 text-center d-grid">
+          <hr class="special-hr" />
+          <a
+            class="btn btn-danger button-admin-style"
+            href="Admin_Izmeni_Film.html"
+          >
+            IZMENI
+          </a>
+          <hr />
+          <h2>ČOVEK MRAV I OSA - KVANTUMANIJA</h2>
+          <hr />
+          <p>
+            Skot Leng i Houp Van Dajn se upuštaju u najveću avanturu do sada. Da
+            li smo rekli najveću? Hteli smo da kažemo najmanju, jer naše heroje
+            put vodi u kvantni realm gde ih čekaju velika iskušenja ako žele da
+            zaštite Multiverzum.
+          </p>
+          <hr />
+          <p>
+            <strong>Režisirao:</strong>
+            <a
+              class="text-danger"
+              href="https://en.wikipedia.org/wiki/Peyton_Reed"
             >
-              IZMENI PODATKE
-            </button>
-            <label for="add"></label>
-          </form>
+              Pejton Rid </a
+            ><br />
+            <strong>Godina puštanja:</strong> 2023<br />
+            <strong>Traje:</strong> 2h
+          </p>
+          <hr />
+          <div class="container justify-content-center">
+            <a href="Gost_Projekcije.html" class="btn btn-dark button-style">
+              PROJEKCIJE
+            </a>
+            <a href="Gost_Prodavnica.html" class="btn btn-dark button-style">
+              PRODAVNICA
+            </a>
+          </div>
         </div>
       </div>
+
+      <div class="row mt-2"></div>
     </div>
 
-
-
+    <!--Footer-->
 
     <footer class="p-0 m-0">
       <div

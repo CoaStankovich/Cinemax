@@ -1,0 +1,241 @@
+<!--Aleksandar Stanković 2019/0478-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Izmeni film</title>
+    <link rel="icon" href="Slike/Logo.png" type="image/png" />
+    <script src="Skripta_Žanrovi.js"></script>
+    <link rel="stylesheet" href="Stilovi.css" />
+    <link
+      href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--Header-->
+
+    <header class="container-fluid p-0" style="text-align: center">
+      <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
+    </header>
+
+    <!--Navigacioni bar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Filmovi.html">FILMOVI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Projekcije.html">PROJEKCIJE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Prodavnica.html">PRODAVNICA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Moje_Karte.html">MOJE KARTE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Moje_Narudžbine.html">
+                MOJE NARUDŽBINE
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gost_Prijava.html">ODJAVI SE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Administracioni bar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger p-0">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarAdmin"
+          aria-controls="navbarAdmin"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarAdmin"
+        >
+          <ul class="navbar-nav navbar-admin">
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Svi_Korisnici.html"
+                >SVI KORISNICI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Admin_Dodaj_Film.html"
+                >DODAJ FILM</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Dodaj_Projekciju.html"
+                >DODAJ PROJEKCIJU</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_Dodaj_Proizvod.html"
+                >DODAJ PROIZVOD</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Sadržaj-->
+
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form class="d-grid" id="add-product-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Ime:</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="genre" class="form-label">Žanrovi:</label>
+              <div class="row m-0 p-0">
+                <div class="col-md-6 m-0 p-0">
+                  <span class="btn w-100 button-genre" id="buttonAkcija"
+                    >Akcija</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonDrama"
+                    >Drama</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonKomedija"
+                    >Komedija</span
+                  >
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                  <span class="btn w-100 button-genre" id="buttonDokumentarac"
+                    >Dokumentarac</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonHoror"
+                    >Horor</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonRomansa"
+                    >Romansa</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Režiser:</label>
+              <input type="text" class="form-control" id="director" required />
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Godina:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="year"
+                min="1888"
+                max="2023"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="duration" class="form-label">Trajanje:</label>
+              <select class="form-select" id="duration" required>
+                <option
+                  value=""
+                  disabled
+                  selected
+                  style="display: none"
+                ></option>
+                <option value="1">2h</option>
+                <option value="2">2h 30min</option>
+                <option value="3">3h</option>
+                <option value="4">3h 30min</option>
+                <option value="4">4h</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Opis:</label>
+              <textarea
+                class="form-control"
+                id="description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="poster" class="form-label">Poster:</label>
+              <input type="file" class="form-control" id="poster" required />
+            </div>
+            <div class="mb-3">
+              <label for="gallery" class="form-label">Slike:</label>
+              <input
+                type="file"
+                class="form-control"
+                id="gallery"
+                multiple
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="trailer" class="form-label">Trejler:</label>
+              <input type="file" class="form-control" id="trailer" required />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark button-style mt-auto"
+              id="add"
+            >
+              IZMENI FILM
+            </button>
+            <label for="add"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="p-0 m-0">
+      <div
+        class="container-fluid row justify-content-center align-items-center p-0 m-0"
+      >
+        <div class="col-sm-10 text-center p-0 m-0">
+          <p class="py-1 m-0">
+            Elektrotehnički fakultet u Beogradu<br />
+            Principi Softverskog Inženjerstva (13S113PSI)<br />
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
