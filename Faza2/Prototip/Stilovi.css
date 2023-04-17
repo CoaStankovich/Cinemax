@@ -81,17 +81,18 @@
   }
 }
 
-.button-genre {
+.button-select {
   border-color: lightgray !important;
+  background-color: white !important;
 }
 
-.button-genre:hover {
-  background-color: gray;
+.button-select:hover {
+  background-color: gray !important;
   border-color: gray !important;
   color: white !important;
 }
 
-.selected-genre {
+.selected-select {
   background-color: gray !important;
   border-color: gray !important;
   color: white !important;
