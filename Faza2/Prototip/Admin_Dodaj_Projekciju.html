@@ -1,8 +1,11 @@
+<!--Aleksandar Stanković 2019/0478-->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Dodaj projekciju</title>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
+    <script src="Dodaj_Projekciju.js"></script>
     <link rel="stylesheet" href="Stilovi.css" />
     <link
       href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -14,9 +17,13 @@
   </head>
 
   <body>
+    <!--Header-->
+
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -37,9 +44,6 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Početna.html">POČETNA</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="Admin_Filmovi.html">FILMOVI</a>
             </li>
             <li class="nav-item">
@@ -57,12 +61,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Gost_Početna.html">ODJAVI SE</a>
+              <a class="nav-link" href="Gost_Prijava.html">ODJAVI SE</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!--Administracioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-danger p-0">
       <div class="container-fluid">
@@ -70,8 +76,8 @@
           class="navbar-toggler mx-auto"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarAdmin"
+          aria-controls="navbarAdmin"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -79,9 +85,9 @@
         </button>
         <div
           class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
+          id="navbarAdmin"
         >
-          <ul class="navbar-nav nav2">
+          <ul class="navbar-nav navbar-admin">
             <li class="nav-item">
               <a class="nav-link" href="Admin_Svi_Korisnici.html"
                 >SVI KORISNICI</a
@@ -105,6 +111,108 @@
       </div>
     </nav>
 
+    <!--Sadržaj-->
+
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form class="d-grid" id="add-projection-form">
+            <div class="mb-3">
+              <label for="movies" class="form-label">Film:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="filmovi"
+                id="movies"
+                autocomplete="off"
+                required
+              />
+              <datalist id="filmovi">
+                <option value="Čovek Mrav i Osa - Kvantumanija"></option>
+                <option value="Avatar - Put vode"></option>
+                <option value="Šazam! Gnev bogova"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="cinema" class="form-label">Bioskop:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="cinemas"
+                id="cinema"
+                required
+                autocomplete="off"
+              />
+              <datalist id="cinemas">
+                <option value="Cinemax BEO Shopping Center"></option>
+                <option value="Cinemax Delta City"></option>
+                <option value="Cinemax Rajićeva"></option>
+                <option value="Cinemax Ušće Shopping Center"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="room-format" class="form-label">Sala i format:</label>
+              <div class="input-group" id="room-format">
+                <select class="form-select" id="room" required>
+                  <option value="">Sala:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <select class="form-select" id="format" required>
+                  <option value="">Format:</option>
+                  <option value="Digital 2D">Digital 2D</option>
+                  <option value="Digital 3D">Digital 3D</option>
+                  <option value="IMAX 2D">IMAX 2D</option>
+                  <option value="IMAX 3D">IMAX 3D</option>
+                  <option value="MX4D 2D">MX4D 2D</option>
+                  <option value="MX4D 3D">MX4D 3D</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="date-time" class="form-label">Datum i vreme:</label>
+              <div class="input-group" id="date-time">
+                <input type="date" class="form-control" id="date" required />
+                <input type="time" class="form-control" id="time" required />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Cena karte:</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  placeholder="Dinari:"
+                  required
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="points"
+                  placeholder="Bodovi:"
+                  required
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark button-style mt-auto"
+              id="add"
+            >
+              DODAJ PROJEKCIJU
+            </button>
+            <label for="add"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -113,8 +221,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>
