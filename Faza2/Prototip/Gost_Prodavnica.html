@@ -71,13 +71,30 @@
       class="row container-fluid p-0 m-0"
       style="background-color: rgb(242, 242, 242)"
     >
-      <div class="col-md-3 p-0 m-0">
-        <input
-          type="text"
-          class="form-control"
-          id="productName"
-          placeholder="Proizvod:"
-        />
+      <div class="row col-md-6 p-0 m-0">
+        <div class="col-lg-6 p-0 m-0">
+          <input
+            type="text"
+            class="form-control"
+            id="productName"
+            placeholder="Proizvod:"
+          />
+        </div>
+        <div class="col-lg-6 p-0 m-0">
+          <input
+            type="text"
+            class="form-control"
+            list="filmovi"
+            id="movies"
+            autocomplete="off"
+            placeholder="Film:"
+          />
+          <datalist id="filmovi">
+            <option value="Čovek Mrav i Osa - Kvantumanija"></option>
+            <option value="Avatar - Put vode"></option>
+            <option value="Šazam! Gnev bogova"></option>
+          </datalist>
+        </div>
       </div>
       <div class="row col-md-6 p-0 m-0">
         <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
@@ -110,21 +127,6 @@
             Obuća
           </span>
         </div>
-      </div>
-      <div class="col-md-3 p-0 m-0">
-        <input
-          type="text"
-          class="form-control"
-          list="filmovi"
-          id="movies"
-          autocomplete="off"
-          placeholder="Film:"
-        />
-        <datalist id="filmovi">
-          <option value="Čovek Mrav i Osa - Kvantumanija"></option>
-          <option value="Avatar - Put vode"></option>
-          <option value="Šazam! Gnev bogova"></option>
-        </datalist>
       </div>
     </div>
 
