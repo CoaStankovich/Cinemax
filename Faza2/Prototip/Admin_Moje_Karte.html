@@ -1,3 +1,5 @@
+<!--Aleksandar Stanković 2019/0478-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,9 +39,6 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Početna.html">POČETNA</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="Admin_Filmovi.html">FILMOVI</a>
             </li>
             <li class="nav-item">
@@ -49,17 +48,17 @@
               <a class="nav-link" href="Admin_Prodavnica.html">PRODAVNICA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="Admin_Moje_Karte.html"
-                >MOJE KARTE</a
-              >
+              <a class="nav-link active" href="Admin_Moje_Karte.html">
+                MOJE KARTE
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Moje_Narudžbine.html"
-                >MOJE NARUDŽBINE</a
-              >
+              <a class="nav-link" href="Admin_Moje_Narudžbine.html">
+                MOJE NARUDŽBINE
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Gost_Početna.html">ODJAVI SE</a>
+              <a class="nav-link" href="Gost_Prijava.html">ODJAVI SE</a>
             </li>
           </ul>
         </div>
@@ -72,8 +71,8 @@
           class="navbar-toggler mx-auto"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarAdmin"
+          aria-controls="navbarAdmin"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -81,9 +80,9 @@
         </button>
         <div
           class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
+          id="navbarAdmin"
         >
-          <ul class="navbar-nav nav2">
+          <ul class="navbar-nav navbar-admin">
             <li class="nav-item">
               <a class="nav-link" href="Admin_Svi_Korisnici.html"
                 >SVI KORISNICI</a
@@ -107,6 +106,120 @@
       </div>
     </nav>
 
+    <div class="container mt-5 table-responsive my-tickets content">
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th>Film</th>
+            <th>Bioskop</th>
+            <th>Sala</th>
+            <th>Format</th>
+            <th>Datum</th>
+            <th>Vreme</th>
+            <th>Cena</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a class="text-danger" href="Admin_Film.html"
+                >Avatar - Put vode</a
+              >
+            </td>
+            <td>Cinemax Delta City</td>
+            <td>2</td>
+            <td>Digital 3D</td>
+            <td>22.3.2023</td>
+            <td>20:30</td>
+            <td>
+              800 RSD <br />
+              10000 bodova
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-dark btn-cancel"
+                data-bs-toggle="modal"
+                data-bs-target="#modalConfirm"
+              >
+                UKINI
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-danger" href="Admin_Film.html"
+                >Antmen i osa - Kvantumanija</a
+              >
+            </td>
+            <td>Cinemax Rajićeva</td>
+            <td>1</td>
+            <td>Digital 2D</td>
+            <td>24.3.2023</td>
+            <td>21:30</td>
+            <td>
+              750 RSD <br />
+              10000 bodova
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-dark btn-cancel"
+                data-bs-toggle="modal"
+                data-bs-target="#modalConfirm"
+              >
+                UKINI
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalConfirm"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">UPOZORENJE!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Da li ste sigurni da želite da ukinete rezervaciju karte?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              DA
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              NE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -115,8 +228,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>

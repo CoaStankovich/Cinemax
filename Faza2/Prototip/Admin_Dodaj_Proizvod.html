@@ -116,7 +116,15 @@
     <div class="container mt-5 content">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
+<<<<<<< HEAD
           <form class="d-grid" id="add-projection-form">
+=======
+          <form class="d-grid" id="add-product-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Ime:</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             <div class="mb-3">
               <label for="movies" class="form-label">Film:</label>
               <input
@@ -128,12 +136,17 @@
                 required
               />
               <datalist id="filmovi">
+<<<<<<< HEAD
                 <option value="Čovek Mrav i Osa - Kvantumanija"></option>
+=======
+                <option value="Antmen i osa - Kvantumanija"></option>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
                 <option value="Avatar - Put vode"></option>
                 <option value="Šazam! Gnev bogova"></option>
               </datalist>
             </div>
             <div class="mb-3">
+<<<<<<< HEAD
               <label for="cinema" class="form-label">Bioskop:</label>
               <input
                 type="text"
@@ -181,6 +194,41 @@
             </div>
             <div class="mb-3">
               <label for="price" class="form-label">Cena karte:</label>
+=======
+              <label for="type" class="form-label">Tip:</label>
+              <select class="form-select" id="type" required>
+                <option
+                  value=""
+                  disabled
+                  selected
+                  style="display: none"
+                ></option>
+                <option value="Kostim">Kostim</option>
+                <option value="Igračka">Igračka</option>
+                <option value="Odeća">Odeća</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Opis:</label>
+              <textarea
+                class="form-control"
+                id="description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="gallery" class="form-label">Slike:</label>
+              <input
+                type="file"
+                class="form-control"
+                id="gallery"
+                multiple
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Cena:</label>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
               <div class="input-group">
                 <input
                   type="number"
@@ -198,12 +246,23 @@
                 />
               </div>
             </div>
+<<<<<<< HEAD
+=======
+            <div class="mb-3">
+              <label for="count" class="form-label">Količina:</label>
+              <input type="number" class="form-control" id="count" required />
+            </div>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             <button
               type="submit"
               class="btn btn-dark button-style mt-auto"
               id="add"
             >
+<<<<<<< HEAD
               DODAJ PROJEKCIJU
+=======
+              DODAJ PROIZVOD
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             </button>
             <label for="add"></label>
           </form>

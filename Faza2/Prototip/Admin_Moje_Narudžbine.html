@@ -1,3 +1,5 @@
+<!--Aleksandar Stanković 2019/0478-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,9 +39,6 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Početna.html">POČETNA</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="Admin_Filmovi.html">FILMOVI</a>
             </li>
             <li class="nav-item">
@@ -57,7 +56,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Gost_Početna.html">ODJAVI SE</a>
+              <a class="nav-link" href="Gost_Prijava.html">ODJAVI SE</a>
             </li>
           </ul>
         </div>
@@ -70,8 +69,8 @@
           class="navbar-toggler mx-auto"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarAdmin"
+          aria-controls="navbarAdmin"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -79,9 +78,9 @@
         </button>
         <div
           class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
+          id="navbarAdmin"
         >
-          <ul class="navbar-nav nav2">
+          <ul class="navbar-nav navbar-admin">
             <li class="nav-item">
               <a class="nav-link" href="Admin_Svi_Korisnici.html"
                 >SVI KORISNICI</a
@@ -105,6 +104,41 @@
       </div>
     </nav>
 
+    <div class="container mt-5 table-responsive my-orders content">
+      <div class="text-center">
+        <h4>Sve uplate na račun: 000-1230000000321-95</h4>
+      </div>
+      <hr />
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th>Slika</th>
+            <th>Proizvod</th>
+            <th>Cena</th>
+            <th>Poziv na broj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="Slike/AntmanKostim.jpg"
+                alt="AntmanKostim.jpg"
+                style="height: 50px"
+              />
+            </td>
+            <td>
+              <a class="text-danger" href="Admin_Proizvod.html"
+                >Ant man Kostim</a
+              >
+            </td>
+            <td>7500 RSD</td>
+            <td>012345</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -113,8 +147,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>

@@ -1,3 +1,5 @@
+<!--Aleksandar Stanković 2019/0478-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,9 +16,12 @@
   </head>
 
   <body>
+    <!--Header-->
     <header class="container-fluid p-0" style="text-align: center">
       <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
     </header>
+
+    <!--Navigacioni bar-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
       <div class="container-fluid">
@@ -36,9 +41,6 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="Gost_Početna.html">POČETNA</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="Gost_Filmovi.html">FILMOVI</a>
             </li>
@@ -61,6 +63,106 @@
       </div>
     </nav>
 
+    <div class="container-fluid" style="background-color: rgb(242, 242, 242)">
+      <form class="d-flex">
+        <div class="form-group me-3">
+          <input
+            type="text"
+            class="form-control"
+            list="filmovi"
+            id="movies"
+            autocomplete="off"
+            placeholder="Film:"
+            required
+          />
+          <datalist id="filmovi">
+            <option value="Antmen i osa - Kvantumanija"></option>
+            <option value="Avatar - Put vode"></option>
+            <option value="Šazam! Gnev bogova"></option>
+          </datalist>
+        </div>
+        <div class="form-group me-3">
+          <select class="form-control" multiple>
+            <option>Akcija</option>
+            <option>Komedija</option>
+            <option>Drama</option>
+            <option>Horor</option>
+            <option>Romansa</option>
+          </select>
+        </div>
+        <div class="form-group me-3">
+          <input
+            type="text"
+            class="form-control"
+            list="cinemas"
+            id="cinema"
+            required
+            autocomplete="off"
+          />
+          <datalist id="cinemas">
+            <option value="Cinemax BEO Shopping Center"></option>
+            <option value="Cinemax Delta City"></option>
+            <option value="Cinemax Rajićeva"></option>
+            <option value="Cinemax Ušće Shopping Center"></option>
+          </datalist>
+        </div>
+        <div class="form-group me-3">
+          <input type="date" class="form-control" placeholder="Date" />
+        </div>
+        <div class="form-group me-3">
+          <select class="form-select" id="format" required>
+            <option value="">Format:</option>
+            <option value="Digital 2D">Digital 2D</option>
+            <option value="Digital 3D">Digital 3D</option>
+            <option value="IMAX 2D">IMAX 2D</option>
+            <option value="IMAX 3D">IMAX 3D</option>
+            <option value="MX4D 2D">MX4D 2D</option>
+            <option value="MX4D 3D">MX4D 3D</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container mt-5 table-responsive my-tickets content">
+      <div class="form-text p-0 text-center">
+        Želite da rezervišete? Prijavite se na sledećem
+        <a class="text-danger" href="Gost_Prijava.html">linku</a>.
+      </div>
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th>Film</th>
+            <th>Bioskop</th>
+            <th>Format</th>
+            <th>Datum</th>
+            <th>Vreme</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a class="text-danger" href="Gost_Film.html">Avatar - Put vode</a>
+            </td>
+            <td>Cinemax Delta City</td>
+            <td>Digital 3D</td>
+            <td>22.3.2023</td>
+            <td>20:30</td>
+          </tr>
+          <tr>
+            <td>
+              <a class="text-danger" href="Gost_Film.html"
+                >Antmen i osa - Kvantumanija</a
+              >
+            </td>
+            <td>Cinemax Rajićeva</td>
+            <td>Digital 2D</td>
+            <td>24.3.2023</td>
+            <td>21:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"
@@ -69,8 +171,8 @@
           <p class="py-1 m-0">
             Elektrotehnički fakultet u Beogradu<br />
             Principi Softverskog Inženjerstva (13S113PSI)<br />
-            Aleksandar Stanković<br />
-            Vukan Žarković
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
           </p>
         </div>
       </div>
