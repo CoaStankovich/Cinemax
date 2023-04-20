@@ -104,6 +104,75 @@
       </div>
     </nav>
 
+
+
+
+    <title>User List</title>
+	<!-- Bootstrap 5 stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<style>
+		/* Style for the container */
+		.container {
+			margin-top: 100px; /* move container down from the top */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center mb-4">User List</h1>
+		<div class="row justify-content-center">
+			<div class="col-10">
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Surname</th>
+							<th>Username</th>
+							<th>Account Type</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>johndoe</td>
+							<td>zaposleni</td>
+							<td>
+								<button class="btn btn-danger">Delete Account</button>
+								<button class="btn btn-primary">Make Admin</button>
+								<button class="btn btn-warning">Remove Admin</button>
+							</td>
+						</tr>
+						<!-- Add more users here -->
+            <tr>
+              <td>Miki</td>
+							<td>Maus</td>
+							<td>Mikimaus1</td>
+							<td>gost</td>
+							<td>
+								<button class="btn btn-danger">Delete Account</button>
+								<button class="btn btn-primary">Make Admin</button>
+								<button class="btn btn-warning">Remove Admin</button>
+							</td>
+            </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap 5 JavaScript bundle (including Popper) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
     <footer class="p-0 m-0">
       <div
         class="container-fluid row justify-content-center align-items-center p-0 m-0"

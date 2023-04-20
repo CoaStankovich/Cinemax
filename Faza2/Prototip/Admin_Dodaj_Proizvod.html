@@ -3,8 +3,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dodaj Proizvod</title>
+    <title>Dodaj projekciju</title>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
+    <script src="Dodaj_Projekciju.js"></script>
     <link rel="stylesheet" href="Stilovi.css" />
     <link
       href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -96,12 +97,12 @@
               <a class="nav-link" href="Admin_Dodaj_Film.html">DODAJ FILM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Admin_Dodaj_Projekciju.html"
+              <a class="nav-link active" href="Admin_Dodaj_Projekciju.html"
                 >DODAJ PROJEKCIJU</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="Admin_Dodaj_Proizvod.html"
+              <a class="nav-link" href="Admin_Dodaj_Proizvod.html"
                 >DODAJ PROIZVOD</a
               >
             </li>
@@ -115,11 +116,15 @@
     <div class="container mt-5 content">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
+<<<<<<< HEAD
+          <form class="d-grid" id="add-projection-form">
+=======
           <form class="d-grid" id="add-product-form">
             <div class="mb-3">
               <label for="name" class="form-label">Ime:</label>
               <input type="text" class="form-control" id="name" required />
             </div>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             <div class="mb-3">
               <label for="movies" class="form-label">Film:</label>
               <input
@@ -131,12 +136,69 @@
                 required
               />
               <datalist id="filmovi">
+<<<<<<< HEAD
                 <option value="Čovek Mrav i Osa - Kvantumanija"></option>
+=======
+<<<<<<< HEAD
+                <option value="Čovek Mrav i Osa - Kvantumanija"></option>
+=======
+                <option value="Antmen i osa - Kvantumanija"></option>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
+>>>>>>> 095d18404545380b9f326f8f3218b0fc209ac251
                 <option value="Avatar - Put vode"></option>
                 <option value="Šazam! Gnev bogova"></option>
               </datalist>
             </div>
             <div class="mb-3">
+<<<<<<< HEAD
+              <label for="cinema" class="form-label">Bioskop:</label>
+              <input
+                type="text"
+                class="form-control"
+                list="cinemas"
+                id="cinema"
+                required
+                autocomplete="off"
+              />
+              <datalist id="cinemas">
+                <option value="Cinemax BEO Shopping Center"></option>
+                <option value="Cinemax Delta City"></option>
+                <option value="Cinemax Rajićeva"></option>
+                <option value="Cinemax Ušće Shopping Center"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="room-format" class="form-label">Sala i format:</label>
+              <div class="input-group" id="room-format">
+                <select class="form-select" id="room" required>
+                  <option value="">Sala:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <select class="form-select" id="format" required>
+                  <option value="">Format:</option>
+                  <option value="Digital 2D">Digital 2D</option>
+                  <option value="Digital 3D">Digital 3D</option>
+                  <option value="IMAX 2D">IMAX 2D</option>
+                  <option value="IMAX 3D">IMAX 3D</option>
+                  <option value="MX4D 2D">MX4D 2D</option>
+                  <option value="MX4D 3D">MX4D 3D</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="date-time" class="form-label">Datum i vreme:</label>
+              <div class="input-group" id="date-time">
+                <input type="date" class="form-control" id="date" required />
+                <input type="time" class="form-control" id="time" required />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Cena karte:</label>
+=======
               <label for="type" class="form-label">Tip:</label>
               <select class="form-select" id="type" required>
                 <option
@@ -170,6 +232,7 @@
             </div>
             <div class="mb-3">
               <label for="price" class="form-label">Cena:</label>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
               <div class="input-group">
                 <input
                   type="number"
@@ -187,16 +250,23 @@
                 />
               </div>
             </div>
+<<<<<<< HEAD
+=======
             <div class="mb-3">
               <label for="count" class="form-label">Količina:</label>
               <input type="number" class="form-control" id="count" required />
             </div>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             <button
               type="submit"
               class="btn btn-dark button-style mt-auto"
               id="add"
             >
+<<<<<<< HEAD
+              DODAJ PROJEKCIJU
+=======
               DODAJ PROIZVOD
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
             </button>
             <label for="add"></label>
           </form>

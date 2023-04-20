@@ -5,7 +5,11 @@
   <head>
     <title>Dodaj film</title>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
+<<<<<<< HEAD
+    <script src="Dodaj_film.js"></script>
+=======
     <script src="Skripta_Žanrovi.js"></script>
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
     <link rel="stylesheet" href="Stilovi.css" />
     <link
       href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -119,13 +123,52 @@
     <div class="container mt-5 content">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
+<<<<<<< HEAD
           <form class="d-grid" id="add-product-form">
+=======
+<<<<<<< HEAD
+          <form class="d-grid" id="add-movie-form">
             <div class="mb-3">
               <label for="name" class="form-label">Ime:</label>
               <input type="text" class="form-control" id="name" required />
             </div>
             <div class="mb-3">
               <label for="genre" class="form-label">Žanrovi:</label>
+              <div class="row m-0 p-0">
+                <div class="col-md-6 m-0 p-0">
+                  <span class="btn w-100 button-genre" id="buttonAkcija"
+                    >Akcija</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonDrama"
+                    >Drama</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonKomedija"
+                    >Komedija</span
+                  >
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                  <span class="btn w-100 button-genre" id="buttonDokumentarac"
+                    >Dokumentarac</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonHoror"
+                    >Horor</span
+                  >
+                  <span class="btn w-100 button-genre" id="buttonRomansa"
+                    >Romansa</span
+                  >
+                </div>
+              </div>
+            </div>
+=======
+          <form id="add-movie-form" class="d-grid">
+>>>>>>> 095d18404545380b9f326f8f3218b0fc209ac251
+            <div class="mb-3">
+              <label for="name" class="form-label">Ime:</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="genre" class="form-label">Žanrovi:</label>
+<<<<<<< HEAD
               <div class="row m-0 p-0">
                 <div class="col-md-6 m-0 p-0">
                   <span class="btn w-100 button-genre" id="buttonAkcija"
@@ -183,6 +226,65 @@
               </select>
             </div>
             <div class="mb-3">
+=======
+                <div class="row m-0 p-0">
+                  <div class="col-md-6 m-0 p-0">
+                    <span class="btn w-100 button-genre" id="buttonAkcija">Akcija</span>
+                    <span class="btn w-100 button-genre" id="buttonDrama">Drama</span>
+                    <span class="btn w-100 button-genre" id="buttonKomedija">Komedija</span>
+                  </div>
+                  <div class="col-md-6 m-0 p-0">
+                    <span class="btn w-100 button-genre" id="buttonDokumentarac">Dokumentarac</span>
+                    <span class="btn w-100 button-genre"id="buttonHoror">Horor</span>
+                    <span class="btn w-100 button-genre" id="buttonRomansa">Romansa</span>
+                  </div>
+                </div>              
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
+            <div class="mb-3">
+              <label for="director" class="form-label">Režiser:</label>
+              <input type="text" class="form-control" id="director" required />
+            </div>
+            <div class="mb-3">
+              <label for="year" class="form-label">Godina:</label>
+<<<<<<< HEAD
+              <input
+                type="number"
+                class="form-control"
+                id="year"
+                min="1888"
+                max="2023"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="duration" class="form-label">Trajanje:</label>
+              <select class="form-select" id="duration" required>
+                <option
+                  value=""
+                  disabled
+                  selected
+                  style="display: none"
+                ></option>
+                <option value="1">2h</option>
+                <option value="2">2h 30min</option>
+                <option value="3">3h</option>
+                <option value="4">3h 30min</option>
+                <option value="4">4h</option>
+              </select>
+=======
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  list="countries"
+                  id="year"
+                  required
+                  autocomplete="off"
+                />
+>>>>>>> 7ea0f4e546f335fe47e1e08862cdfdb93654857b
+            </div>
+            <div class="mb-3">
+>>>>>>> 095d18404545380b9f326f8f3218b0fc209ac251
               <label for="description" class="form-label">Opis:</label>
               <textarea
                 class="form-control"
