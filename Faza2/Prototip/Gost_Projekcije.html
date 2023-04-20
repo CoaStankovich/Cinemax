@@ -4,6 +4,7 @@
 <html>
   <head>
     <title>Projekcije</title>
+    <script src="Skripta_Select.js"></script>
     <link rel="icon" href="Slike/Logo.png" type="image/png" />
     <link rel="stylesheet" href="Stilovi.css" />
     <link
@@ -63,9 +64,14 @@
       </div>
     </nav>
 
-    <div class="container-fluid" style="background-color: rgb(242, 242, 242)">
-      <form class="d-flex">
-        <div class="form-group me-3">
+    <!--Pretraga-->
+
+    <div
+      class="row container-fluid p-0 m-0"
+      style="background-color: rgb(242, 242, 242)"
+    >
+      <div class="row col-md-3 p-0 m-0">
+        <div class="col-lg-6 p-0 m-0">
           <input
             type="text"
             class="form-control"
@@ -73,24 +79,14 @@
             id="movies"
             autocomplete="off"
             placeholder="Film:"
-            required
           />
           <datalist id="filmovi">
-            <option value="Antmen i osa - Kvantumanija"></option>
+            <option value="Čovek Mrav i Osa - Kvantumanija"></option>
             <option value="Avatar - Put vode"></option>
             <option value="Šazam! Gnev bogova"></option>
           </datalist>
         </div>
-        <div class="form-group me-3">
-          <select class="form-control" multiple>
-            <option>Akcija</option>
-            <option>Komedija</option>
-            <option>Drama</option>
-            <option>Horor</option>
-            <option>Romansa</option>
-          </select>
-        </div>
-        <div class="form-group me-3">
+        <div class="col-lg-6 p-0 m-0">
           <input
             type="text"
             class="form-control"
@@ -98,6 +94,7 @@
             id="cinema"
             required
             autocomplete="off"
+            placeholder="Bioskop:"
           />
           <datalist id="cinemas">
             <option value="Cinemax BEO Shopping Center"></option>
@@ -106,10 +103,12 @@
             <option value="Cinemax Ušće Shopping Center"></option>
           </datalist>
         </div>
-        <div class="form-group me-3">
+      </div>
+      <div class="row col-md-3 p-0 m-0">
+        <div class="col-lg-6 p-0 m-0">
           <input type="date" class="form-control" placeholder="Date" />
         </div>
-        <div class="form-group me-3">
+        <div class="col-lg-6 p-0 m-0">
           <select class="form-select" id="format" required>
             <option value="">Format:</option>
             <option value="Digital 2D">Digital 2D</option>
@@ -120,12 +119,46 @@
             <option value="MX4D 3D">MX4D 3D</option>
           </select>
         </div>
-      </form>
+      </div>
+      <div class="row col-md-6 p-0 m-0">
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonAkcija">
+            Dekor
+          </span>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonDrama">
+            Igračke
+          </span>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonKomedija">
+            Igrice
+          </span>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonAkcija">
+            Kostimi
+          </span>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonDrama">
+            Odeća
+          </span>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 m-0 p-0">
+          <span class="btn w-100 button-select m-0" id="buttonKomedija">
+            Obuća
+          </span>
+        </div>
+      </div>
     </div>
 
-    <div class="container mt-5 table-responsive my-tickets content">
-      <div class="form-text p-0 text-center">
-        Želite da rezervišete? Prijavite se na sledećem
+    <!--Sadržaj-->
+
+    <div class="container mt-2 table-responsive my-tickets content">
+      <div class="form-text p-0 mb-1 text-center">
+        Želite da rezervišete karte? Prijavite se na sledećem
         <a class="text-danger" href="Gost_Prijava.html">linku</a>.
       </div>
       <table class="table table-striped text-center">
@@ -140,28 +173,30 @@
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td class="align-middle">
               <a class="text-danger" href="Gost_Film.html">Avatar - Put vode</a>
             </td>
-            <td>Cinemax Delta City</td>
-            <td>Digital 3D</td>
-            <td>22.3.2023</td>
-            <td>20:30</td>
+            <td class="align-middle">Cinemax Delta City</td>
+            <td class="align-middle">Digital 3D</td>
+            <td class="align-middle">22.3.2023</td>
+            <td class="align-middle">20:30</td>
           </tr>
           <tr>
-            <td>
+            <td class="align-middle">
               <a class="text-danger" href="Gost_Film.html"
-                >Antmen i osa - Kvantumanija</a
+                >Čovek Mrav i Osa - Kvantumanija</a
               >
             </td>
-            <td>Cinemax Rajićeva</td>
-            <td>Digital 2D</td>
-            <td>24.3.2023</td>
-            <td>21:30</td>
+            <td class="align-middle">Cinemax Rajićeva</td>
+            <td class="align-middle">Digital 2D</td>
+            <td class="align-middle">24.3.2023</td>
+            <td class="align-middle">21:30</td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <!--Footer-->
 
     <footer class="p-0 m-0">
       <div
