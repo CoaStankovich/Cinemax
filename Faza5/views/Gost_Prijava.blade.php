@@ -1,0 +1,119 @@
+<!--Aleksandar Stanković 2019/0478-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prijava</title>
+    <link rel="icon" href="Slike/Logo.png" type="image/png" />
+    <script src="Skripta_Prijava.js"></script>
+    <link rel="stylesheet" href="Stilovi.css" />
+    <link
+      href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="container-fluid p-0" style="text-align: center">
+      <img src="Slike/Tapemax.png" alt="Tapemax.png" class="header-img" />
+    </header>
+
+    <!--Navigacioni bar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Gost_Filmovi.html">FILMOVI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gost_Projekcije.html">PROJEKCIJE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gost_Prodavnica.html">PRODAVNICA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Gost_Prijava.html">PRIJAVA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gost_Registracija.html">REGISTRUJ SE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Sadržaj-->
+
+    <div class="container mt-5 content">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <form method="POST" action="{{route("login")}}" class="d-grid" id="log-in-form">
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail adresa:</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="password" class="form-label">Šifra:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-text p-0 my-2">
+              Nemate nalog? Postanite član na sledećem
+              <a class="text-danger" href="Gost_Registracija.html">linku</a>.
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark btn-block mt-auto button-style"
+              id="log-in"
+            >
+              PRIJAVI SE
+            </button>
+            <label for="log-in"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="p-0 m-0">
+      <div
+        class="container-fluid row justify-content-center align-items-center p-0 m-0"
+      >
+        <div class="col-sm-10 text-center p-0 m-0">
+          <p class="py-1 m-0">
+            Elektrotehnički fakultet u Beogradu<br />
+            Principi Softverskog Inženjerstva (13S113PSI)<br />
+            Aleksandar Stanković 2019/0478<br />
+            Vukan Žarković 2019/0107
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
